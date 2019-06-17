@@ -15,7 +15,26 @@ Use image magick on the newspaper files with conversion command [went nowhere - 
 Doing the command as laid out in the workbook with the war diary file. [This time no hiccups but no action. The instructions said be patient. I was patient but the computer timed out instead.]
 *Beginning again on Saturday.*
 Reimport Tesseract and ImageMagick. Reinput the conversion command correcting a possible misreading. It worked and did about as reasonable a job as I expected on the war diary - would not take much to clean this up. Repeated the exercise substituting my file names to convert the newspaper. Worked but the result is unreadable.
-Tried to use RStudio as a comparison to using command line for conversion.
+
+Exercise 4 APIs and JSON
+Copied the commands as presented in the workbook. 
+
+Exercise 6 and RStudio
+Installing the various packages. Libcur not found (had confused l4 for 14). Doing command again and Installing remainder following the commands as laid out in the workbook. All fine.
+Enter RStudio. Unlike the video I am being prompted for a user name and password. I put in the dh name/password (same as the command line log-in) but it was not recognized. Check Slackbot. No-one in the class identified a similar problem. Googled Error incorrect password. People did report a problem with RStudio support. Various different commands suggest 1) verify the installation  - sudo rstudio-server verify-installation [ERROR system error 98 (Address already in use); OCCURRED AT: core::Error core::http::initTcpIpAcceptor(core::http::SocketAcceptorService<boost::asio::ip::tcp>&, const std::string&, const std::string&) /home/ubuntu/rstudio/src/cpp/core/include/core/http/TcpIpSocketUtils.hpp:102; LOGGED FROM: int main(int, char* const*) /home/ubuntu/rstudio/src/cpp/server/ServerMain.cpp:423] 2) try to mirror the command line passwork - sudo cp /etc/pam.d/login /etc/pam.d/rstudio [No error message, return to the $ line so tried to log in again. No joy.] Tried in different browser. No difference. At this point too little time left so I left it.
+
+Texaas Exercise
+Inputted the command and got a file texas.txt as expected. On opening it, no content
+Deleted the empty file and re-entered the commands
+This time it worked – more misreading the command the first time
+Followed directions, opening in Nano, selecting text and deleting. Then saved and downloaded and finished the job (as per the video).
+
+When I put in the regex command it returned an error. I had mistaken an I for a 1 (one this the font used here is not is good for people with lousy eyesight, not to mention dyslexia).
+
+Redid the command correctly – I thought but …
+deejsmith@13782ddd8316:~$ sed -r -i.bak 's/(.+\bto\b.+)/~\1/g' texas.txtsed: can't read texas.txt: No such file or directorydeejsmith@13782ddd8316:~$ 
+Had forgotten the file was renamed texas-2.tx3
+
 
 #More Thoughts on The Exercises#
 Cleaning up messy data was something I did for the dissertation by eye, reading for my sins every page of nearly forty years of the rural newspaper which had been put on low quality microfilm. I built an index as I read which which allowed me to pull together articles across time for examanation. I also transcribed scores of articles which were particulary relevant. I suspect it took not *too much* more time than encoding the material I had transcribed or even all that much more time than using Tesserat to turn my "pictures" of the newspaper into text. (Although Shawn Anctil did urge on me exploring software that would would "automate the boring stuff"). 
